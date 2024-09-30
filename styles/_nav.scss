@@ -1,0 +1,26 @@
+$main-font: "Mulish", sans-serif;
+.home-page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 110px;
+  color: black;
+  font-family: $main-font;
+}
+
+.home-page-nav h3 {
+  font-size: 23px;
+  color: black;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+

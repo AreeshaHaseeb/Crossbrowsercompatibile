@@ -1,4 +1,8 @@
 $main-font: "Mulish", sans-serif;
+$primary-color: #4A4FF2;
+$secondary-color: #007bff;
+$line-color: #BCD0E5;
+$font-color: black;
 
 .heading-home {
   display: flex;
@@ -6,44 +10,33 @@ $main-font: "Mulish", sans-serif;
   align-items: flex-end;
   justify-content: space-between;
   padding: 20px 110px;
-}
 
-.heading-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: $main-font;
-
-  .heading-text-1 {
-    margin: 40px 0 30px 0;
-    line-height: 1.6;
-    color: #4A4FF2;
-    font-size: 22px;
-    font-weight: bold;
-  }
-
-  .heading-text-2 {
-    font-size: 33px;
-    line-height: 1.6;
-    color: black;
-  }
-
-  .highlight {
-    font-size: 33px;
+  .heading-text {
     display: flex;
-    color: #4A4FF2;
-    font-weight: bold;
-  }
-}
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: $main-font;
 
-.heading-text-2 {
-  font-size: 24px;
-  line-height: 1.6;
-  color: black;
+    .heading-text-1 {
+      margin: 40px 0 30px 0;
+      line-height: 1.6;
+      color: $primary-color;
+      font-size: 22px;
+      font-weight: bold;
+    }
 
-  .highlight {
-    color: #007bff;
-    font-weight: bold;
+    .heading-text-2 {
+      font-size: 33px;
+      line-height: 1.6;
+      color: $font-color;
+
+      .highlight {
+        font-size: 33px;
+        display: flex;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
   }
 }
 
@@ -57,7 +50,7 @@ $main-font: "Mulish", sans-serif;
     font-size: 18px;
     font-family: $main-font;
     font-style: italic;
-    color: black;
+    color: $font-color;
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -76,36 +69,25 @@ $main-font: "Mulish", sans-serif;
 .grid-img-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.item {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.grid-img-box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 10px;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 20px 110px;
-}
 
-.item {
-  position: relative;
-  align-self: start;
+  .item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-self: start;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .service-heading {
@@ -123,13 +105,7 @@ $main-font: "Mulish", sans-serif;
     width: 570px;
   }
 
-  .service-heading-link1 {
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    font-weight: 300;
-  }
-
+  .service-heading-link1,
   .service-heading-link2 {
     font-size: 18px;
     display: flex;
@@ -141,7 +117,7 @@ $main-font: "Mulish", sans-serif;
 .small-container {
   width: 83%;
   height: 48px;
-  border-top: 2px solid #BCD0E5;
+  border-top: 2px solid $line-color;
   box-sizing: border-box;
   background-color: transparent;
   display: flex;
@@ -167,41 +143,41 @@ $main-font: "Mulish", sans-serif;
   align-items: flex-start;
   justify-content: space-between;
   overflow: hidden;
+
+  .title-column {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .service-li {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 100px;
+
+    .li-2 {
+      font-weight: 300;
+      margin-top: 10px;
+    }
+  }
+
+  .service-margin {
+    margin-bottom: 80px;
+  }
+
+  .year-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-self: flex-start;
+  }
 }
 
 .awards-text {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 100px;
-}
-
-.title-column {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.service-li {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  width: 100px;
-}
-
-.li-2 {
-  font-weight: 300;
-  margin-top: 10px;
-}
-
-.service-margin {
-  margin-bottom: 80px;
-}
-
-.year-1 {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-self: flex-start;
 }

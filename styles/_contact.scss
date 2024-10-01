@@ -1,0 +1,84 @@
+@import 'nav';
+$main-font: "Mulish", sans-serif;
+
+.contact-main{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.contact-main-text{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 110px;
+    gap: 50px;
+    width: 40%;
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 26px;
+    .contact-p1{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 55px;
+    }
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin-left: 55px;
+}
+.form-info {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    .form-info div {
+        display: flex;
+        flex-direction: column;
+        font-family:$main-font;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 18px;
+    }
+}
+
+input{ 
+    border: none;
+    border-bottom: 2px solid #979797;
+    background-color: transparent;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 110%;
+}
+.button{
+    background-color: #4A4FF2;
+    color: #FFFFFF;
+    padding: 10px 20px; 
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    font-family: $main-font;
+    font-weight: bold;
+    font-style: normal;
+    box-shadow: 0 4px 6px #000000;
+    text-align: center;
+    .button:hover {
+        background-color: #a4a4a4; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+.contact-map{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    .map-img{
+        width: 87%;
+    }
+}
+@import 'footer'

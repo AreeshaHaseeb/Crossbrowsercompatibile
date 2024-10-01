@@ -1,0 +1,30 @@
+$main-font: "Mulish", sans-serif;
+.home-page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 60px 110px;
+  color: black;
+  font-family: $main-font;
+}
+
+.home-page-footer h3 {
+  font-size: 23px;
+  color: black;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  .contact-link{
+    margin-right: 40px;
+  }
+}
+
+
+
+

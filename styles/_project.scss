@@ -1,0 +1,27 @@
+@import 'nav';
+$main-font: "Mulish", sans-serif;
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 110px;
+    gap: 30px;
+    .p-1{
+        display: flex;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: $main-font;
+    }
+    .p-2{
+        font-family: $main-font;
+        display: flex;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .p-3{
+        font-family: $main-font;
+        display: flex;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

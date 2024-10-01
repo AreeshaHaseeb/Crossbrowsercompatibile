@@ -1,27 +1,100 @@
 @import 'nav';
 $main-font: "Mulish", sans-serif;
 
-.main-text{
+.project-main {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin-top: 40px;
+
+  .main-text {
     display: flex;
     flex-direction: column;
     padding: 20px 110px;
-    gap: 30px;
-    .p-1{
-        display: flex;
-        font-weight: bold;
-        font-size: 40px;
-        font-family: $main-font;
+    gap: 75px;
+    width: 50%;
+
+    .p-1 {
+      display: flex;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: $main-font;
     }
-    .p-2{
-        font-family: $main-font;
-        display: flex;
-        font-size: 16px;
-        line-height: 26px;
+
+    .p-2,
+    .p-3 {
+      font-family: $main-font;
+      display: flex;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 300;
     }
-    .p-3{
-        font-family: $main-font;
-        display: flex;
-        font-size: 16px;
-        line-height: 26px;
+  }
+
+  .main-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .main-list-item {
+      font-size: 18px;
+      font-family: $main-font;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      font-weight: bold;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .label {
+      font-weight: 300;
+    }
+
+    .small-container {
+      width: 100%;
+      height: 40px;
+      border-top: 1px solid #979797;
+      box-sizing: border-box;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .main-list-item p {
+      margin: 0;
+      padding: 5px 0;
+    }
+  }
+}
+.project-main-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    .project-img{
+        width: 83%;
+    }
+    .project-main-text{
+    display: flex;
+    width: 83%;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $main-font;
+    padding: 45px 0;
     }
 }
+.three-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 35px 0;
+    .common-img{
+        width: 26%;
+    }
+}
+@import 'footer';
